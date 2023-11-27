@@ -63,7 +63,7 @@ eq_ref: 主键或者唯一索引扫描
 
 ref：非唯一索引扫描，本质也是索引访问，返回匹配的单独值的行
 
-range：检索一定范围的行，使用索引如between，<,> in等查询
+range：检索一定范围的行，使用索引如between，< , >, in等查询
 
 index： full index scan（全索引扫描），遍历索引树的全部
 
