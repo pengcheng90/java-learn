@@ -22,6 +22,13 @@ Executors.newCachedThreadPool,可缓存的无界线程池，如果长度超出�
 ## 线程池原理
 
 
+## 线程池的拒绝策略
+1：AbortPolicy 抛出异常
+2：CallRunnersPolicy 调用的主线程执行任务，不创建子线程
+3: DiscardPolicy 丢弃掉任务
+3: DiscardOldestPolicy  丢弃掉最早的任务
+
+
 参考链接：
 https://blog.csdn.net/qq_40093255/article/details/116990431
 
