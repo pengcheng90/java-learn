@@ -23,9 +23,9 @@
 
 * 内存淘汰策略
 
-共6种
+共8种
 
-no-eviction：默认的，即不删除，内存不够的新写入数据会报异常
+no-eviction：默认的，即不删除，内存不够的新写入数据会报异常 <br>
 volatile-ttl: 根据设置了过期时间的key**将要过期的**进行删除
 
 volatile-random: 根据设置了ttl的key，进行随机的删除
@@ -33,4 +33,7 @@ allkeys-random：对所有的key进行随机删除
 
 volatile-lru：对设置了过期时间的key中使用最少的进行删除
 allkeys-lru：对所有key中使用最少的进行删除
+
+volatile-lfu: 最少使用的，从设置了ttl的key中
+allkeys-lfu: 最少使用的，从所有的key中
 
